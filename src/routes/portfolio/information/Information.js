@@ -1,5 +1,6 @@
 import styles from './Information.module.scss';
 import React, {useState} from 'react';
+import dynamic from 'next/dynamic';
 
 import Utils from './Utils';
 import Header from './Header';
@@ -8,6 +9,7 @@ import Coins from './Coins';
 import View from './View';
 import DeleteWarning from './DeleteWarning';
 
+// const { DragDropContext, Droppable, Draggable } = dynamic(() => import("react-beautiful-dnd"));
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 
 import generateID from 'utils/generateID';
@@ -37,24 +39,24 @@ const Data = ({context}) => {
                     {(provided) => (
                         <div ref={provided.innerRef} {...provided.droppableProps} >
                             {portfolioData.map((el, i) => 
-                              <Draggable key={generateID()} draggableId={`draggable-${i}`} index={i}>
+                                <Draggable key={generateID()} draggableId={`draggable-${i}`} index={i}>
                                     {(provided, snapshot) => (
-                                    <div className={`${styles.portfolio} ${snapshot.isDragging && styles.isDragging}`} ref={provided.innerRef} {...provided.draggableProps}>
-                                        
-                                        <Utils provided={provided} setDeleteWarning={() => setDeleteWarning({warning: true, index: i})}/>
+                                        <div className={`${styles.portfolio} ${snapshot.isDragging && styles.isDragging}`} ref={provided.innerRef} {...provided.draggableProps}>
+                                            
+                                            <Utils provided={provided} setDeleteWarning={() => setDeleteWarning({warning: true, index: i})}/>
 
-                                        <Header data={el} context={context}/>
+                                            <Header data={el} context={context}/>
 
-                                        <View data={el}>
+                                            <View data={el}>
 
-                                            <Select data={el} index={i} context={context} />
+                                                <Select data={el} index={i} context={context} />
 
-                                            <Coins data={el} index={i} context={context} />
+                                                <Coins data={el} index={i} context={context} />
 
-                                        </View>
+                                            </View>
 
-                                    </div>
-                                )}
+                                        </div>
+                                    )}
                                 </Draggable>
                             )}
                             {provided.placeholder}

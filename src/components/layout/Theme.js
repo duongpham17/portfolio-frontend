@@ -1,21 +1,16 @@
 import React from 'react';
-import ContextThemeProvider, {useContextTheme} from 'hooks/useContextTheme';
 
-export const Theme = ({children}) =>
-(
-    <ContextThemeProvider>
-        <ThemePlaceholder children={children}/>
-    </ContextThemeProvider>
-)
-export default Theme
+import { useContextTheme } from 'hooks/useContextTheme';
 
-const ThemePlaceholder = ({children}) => {
+export const Theme = ({children}) => {
 
     const {theme} = useContextTheme();
-    
+
     return (
         <div data-theme={theme}>
             {children}
         </div>
     )
 }
+
+export default Theme
