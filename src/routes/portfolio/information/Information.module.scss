@@ -1,0 +1,15 @@
+.container{
+    margin: auto;
+
+    .portfolio{
+        box-shadow: var(--box-shadow-1);
+        padding: 0.5rem;
+        margin: 1rem auto;
+        border-radius: 5px;
+    }
+    
+    .isDragging{
+        border: var(--border-3)
+    }
+
+}

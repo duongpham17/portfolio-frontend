@@ -1,0 +1,32 @@
+const Names = [
+    "Antman", 
+    "Batman", 
+    "Superman",
+    "Iron man",
+    "Captain America",
+    "Bruce Banner",
+    "Doctor Strange",
+    "Spiderman",
+    "Thanos",
+    "Vision",
+    "Charles", 
+    "Digi", 
+    "Eve", 
+    "Tango", 
+    "Mango", 
+    "Grape", 
+    "Guava",
+    "Papaya",
+    "Kiwi",
+    "Apple",
+    "Orange",
+    "God", 
+    "Ergo",
+    "Sundae",
+    "Monday",
+    "Sunday",
+    "Mars",
+    "Earth"
+];
+
+export default Names

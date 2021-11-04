@@ -1,0 +1,69 @@
+.container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .coins{
+        padding: 0.5rem;
+        border: var(--border-1-1);
+        border-radius: 5px;
+        margin: 0.5rem;
+        width: 200px;
+
+        .price{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+
+            img{
+                cursor:pointer;
+            }
+        }
+
+        .amount{
+            display: flex;
+            margin-bottom: 0.5rem;
+            justify-content: space-between;
+            input{
+                width:120px;
+                border-bottom: var(--border-1);
+                &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+                &:hover{
+                    border-color: var(--main);
+                }
+            }
+            button{
+                border: var(--border-1);
+                padding: 0.1rem 1.2rem;
+                font-size: 0.7rem;
+                &:hover{
+                    color: white;
+                    background-color: black;
+                }
+            }
+        }
+
+        .total{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            svg{
+                display: flex;
+                &:hover{
+                    color: var(--red);
+                }
+            }
+        }
+    }
+
+    .selected{
+        border: var(--border-2-1);
+    }
+    
+
+}

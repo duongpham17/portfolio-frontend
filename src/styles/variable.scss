@@ -1,0 +1,20 @@
+:root{
+    --main: rgb(30, 148, 207);
+    --main-light: hsla(160, 85%, 45%, 0.5)
+    --darkgrey: #555555;
+    --lightgrey: rgb(236, 232, 232);
+    --red: rgb(239, 88, 88);
+}
+
+:root{
+    --border: 1px solid transparent;
+    --border-1: 1px solid lightgrey;
+    --border-1-1: 2px solid lightgrey;
+    --border-2: 1px solid var(--main);
+    --border-2-1: 2px solid var(--main);
+}
+
+:root{
+    --box-shadow-1: 0 0 5px 0 rgb(236, 232, 232);
+    --box-shadow-2: 0 0 10px 3px var(--lightgrey);
+}

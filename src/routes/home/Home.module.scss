@@ -1,0 +1,80 @@
+.container{
+    padding: 1rem;
+
+    .coin-name{
+        display: flex;
+        align-items: center;
+
+        span{
+            margin-left: 0.5rem;
+        }
+    }
+
+    .coin-news{
+        display: flex;
+        overflow: auto;
+        margin-bottom: 2rem;
+        padding: 2rem 1rem;
+        border-bottom: var(--border-3);
+        /* width */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: hsl(0, 0%, 93%); 
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: hsl(0, 0%, 82%); 
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: hsla(0, 0%, 82%, 0.5); 
+        }
+
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        div{
+            margin-right: 1rem;
+            border-radius: 5px;
+            box-shadow: var(--box-shadow-1);
+            padding: 0.3rem;
+        }
+
+        ul{
+            width: 280px;
+            height: 200px ;
+            overflow-y: auto;
+    
+            li{
+                margin-bottom: 0.5rem;
+            }
+    
+            .title{
+                border-bottom: var(--border-2-1);
+                padding: 0.3rem 0;
+                a{
+                    padding: 0.2rem 0;
+
+                    &:hover{
+                        color: var(--main);
+                    }
+                }
+            }
+        }
+
+        img{
+            padding: 0.5rem 0;
+            width: 100%;
+            height: 150px;
+        }
+    }
+
+}

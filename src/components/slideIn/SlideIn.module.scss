@@ -1,0 +1,37 @@
+.container{    
+    
+    .touch{
+        cursor: pointer;
+        &:hover{
+            color: var(--main);
+        }
+    }
+
+    .slideIn{
+        padding: 0.5rem;
+        z-index: 100;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 280px;
+        box-sizing: border-box;
+        height: 100vh;
+        border-left: var(--border-1);
+        transform: translateX(300px);
+        overflow-y: auto;
+        animation: slideIn 0.2s ease-in;
+        animation-fill-mode:forwards;
+
+        @keyframes slideIn{
+            100%{
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 420px){
+            width: 100%; 
+            border-left-color: transparent;
+        }
+    }
+
+}

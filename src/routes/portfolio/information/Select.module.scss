@@ -1,0 +1,46 @@
+.container{
+    margin-bottom: 0.5rem;
+
+    .select{
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 0.5rem;
+
+            &:hover *{
+                color: var(--main);
+            }
+    
+            svg{
+                display: flex;
+            }
+        }
+    }
+
+    .coins{
+        border-bottom: var(--border-1);
+
+        button{
+            display: flex;
+            width: 100%;
+            padding: 0.5rem 0;
+            font-size: 0.9rem;
+            align-items: center;
+
+            &:hover *{
+                color: var(--main);
+            }
+        }
+
+        span{
+            margin-left: 0.4rem;
+        }
+
+        .alreadyAdded{
+            display: none;
+        }
+        
+    }
+}
+

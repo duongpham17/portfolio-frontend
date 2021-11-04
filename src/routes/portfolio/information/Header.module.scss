@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+
+    svg{
+        display: flex;
+        align-items: center;
+        &:hover{
+            color: red;
+        }
+    }
+
+    div{
+        padding: 0.2rem;
+    }
+}

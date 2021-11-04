@@ -1,0 +1,46 @@
+.container{
+    margin: 2rem auto;
+    border-radius: 5px;
+    padding: 0.5rem;
+    box-shadow: var(--box-shadow-1);
+
+    input{
+        width: 100%;
+        border-bottom: var(--border-1);
+        margin-bottom: 0.2rem;
+        padding: 0.5rem 0;
+
+        &:hover{
+            border-bottom: var(--border-2);
+        }
+    }
+
+    button{
+        width: 100%;
+        padding: 0.3rem;
+        border: var(--border-1);
+
+        &:hover{
+            border: var(--border-2);
+            *{
+                color: var(--main);
+            }
+        }
+    }
+
+    label{
+        display: flex;        
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 0.2rem 0;
+
+        &:hover *{
+            color: var(--main);
+        }
+    }
+
+    svg{
+        font-size: 1.2rem;
+    }
+
+}

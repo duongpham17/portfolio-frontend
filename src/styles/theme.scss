@@ -1,0 +1,23 @@
+//theme
+:root{
+    --theme-text-color: #555555;
+    --theme-background-color: white;
+}
+
+button, a, input, textarea, ul, li, option, select, svg,
+p, q, b, label, span,
+h1, h2, h3, h4, h5, h6 {
+    color: var(--theme-text-color);
+}
+
+div, section, main, table, form{
+    background-color: var(--theme-background-color);
+}
+
+[data-theme="dark"]{
+    --theme-background-color: rgb(30, 30, 30);
+    --theme-text-color: white;
+
+    --box-shadow-1: 0 0 5px -1px rgb(93, 93, 93);
+    --box-shadow-2: 0 0 10px 2px rgb(17, 16, 16);
+}

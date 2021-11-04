@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p{
+        width: 100%;
+    }
+
+    button{
+        &:hover svg{
+            color: var(--red);
+        }
+    }
+}
