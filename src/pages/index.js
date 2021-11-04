@@ -20,8 +20,8 @@ export const getStaticProps = async () => {
 
   return{
       props:{
-        ergo_news,
-        cardano_news
+        ergo_news: ergo_news || "",
+        cardano_news: cardano_news || "",
       },
       revalidate: 60 * 60 * 24 * 1  // in days
   }

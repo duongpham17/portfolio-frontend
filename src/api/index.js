@@ -2,9 +2,9 @@ import axios from 'axios';
 
 const development = "http://localhost:8000";
 
-const production = "";
+const production = "https://portfoliobackend--api.herokuapp.com";
 
-const url = development;
+const url = production;
 
 export default axios.create({
     baseURL:`${url}/api`,

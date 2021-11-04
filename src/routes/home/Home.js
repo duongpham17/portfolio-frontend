@@ -22,7 +22,7 @@ const Home = (props) => {
                 <span>Latest News</span>
             </div>
             <div className={styles["coin-news"]}>
-                {news.map(el => 
+                {news && news.map(el => 
                     <div key={generateID()}>
                         <ul>
                             <li>{el.date}</li>
