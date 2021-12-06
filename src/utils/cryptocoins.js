@@ -29,6 +29,16 @@ const Coin = [
         acronym: "cro",
         image: "/icon/cro.png"
     },
+    {
+        name: "Coti",
+        acronym: "coti",
+        image: "/icon/coti.png"
+    },
+    {
+        name: "Pancakeswap",
+        acronym: "cake",
+        image: "/icon/pancakeswap.png"
+    },
     
 ]
 

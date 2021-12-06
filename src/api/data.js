@@ -4,7 +4,7 @@ export const coinGeckoPrice = async () => {
     try{
         const res = await api.get('/data/coin-gecko/price');
 
-        return res.data.data
+        return res.data.price;
     } catch(err){
         console.log(err.response)
     }
