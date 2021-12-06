@@ -35,9 +35,9 @@ const Coin = [
         image: "/icon/coti.png"
     },
     {
-        name: "Pancakeswap",
+        name: "PancakeSwap",
         acronym: "cake",
-        image: "/icon/pancakeswap.png"
+        image: "/icon/pancake.png"
     },
     
 ]
